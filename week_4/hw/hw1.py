@@ -19,7 +19,7 @@ def SmithChart(ax,Smith='Z'):
     x0=np.linspace(-1,1,10) 
     y0=np.zeros(10)
     ax.plot(x0,y0,'k',linewidth=1)
-    k=[.2] 
+    k=[.1] 
     """for i in range(0,len(k)):
         x1=k[i]+(1 - k[i])*np.cos(t)
         y1=(1 - k[i]) * np.sin(t)
@@ -27,7 +27,7 @@ def SmithChart(ax,Smith='Z'):
             ax.plot(x1,y1,'k',lw=0.5)
         if(Smith=='Y'):
             ax.plot(-x1,-y1,'r',lw=0.5)"""
-    kt=[-9]
+    kt=[-7.5]
     k2 = [-.5]
     for i in range(0,len(kt)):
         t = np.linspace(kt[i], 1.5*np.pi, 50) 
