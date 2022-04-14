@@ -8,9 +8,9 @@ S21 = complex(input("Enter the S21 in polar form: "))
 S22 = complex(input("Enter the S22 in polar form: "))
 a1 = complex(input("Enter the a1 in polar form: "))
 a2 = complex(input("Enter the a2 in polar form: "))
-b1 = (S11*a1 + S12*a2)/(S11*a1 + S12*a2 + S21*cmath.conjugate(a1) + S22*cmath.conjugate(a2))
+b1 = (S11*a1 + S12*a2)/(S11*a1 + S12*a2 + S21*a1 + S22*a2)
 p1i = (S11*a1 + S12*a2)*b1
-p1r = (S21*cmath.conjugate(a1) + S22*cmath.conjugate(a2))*b1
+p1r = (S21*a1 + S22*a2)*b1
 p1 = p1i + p1r
 print("The b1 in polar form is: ", b1)
 print("The port 1 incident power is: ", p1i)
